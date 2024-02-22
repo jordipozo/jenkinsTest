@@ -49,7 +49,7 @@ public class Cuenta {
     }
     
     public void retirarDinero(float importe){
-        saldo = saldo - importe;
+        saldo = saldo + importe;
     }
     
     public void mostrarCuenta(){

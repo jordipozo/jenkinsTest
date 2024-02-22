@@ -12,10 +12,12 @@ public class Cuenta {
     // Atributos
     private String numero; //Número cuenta bancaria
     private float  saldo;  //Saldo cuenta
+    private String nombre; //Nombre titular
     // Constructor
-    public Cuenta (String numCta, float saldoCta){
+    public Cuenta (String numCta, float saldoCta, String nombreCta){
         numero=numCta;
         saldo=saldoCta;
+        nombre = nombreCta;
     }
     
     public String getNumero(){
@@ -25,6 +27,10 @@ public class Cuenta {
     public float getSaldo(){
         return saldo;
     }
+        
+    public String getNombre(){
+        return nombre;
+    }
     
     public void setNumero(String numCta){
         numero=numCta;
@@ -32,6 +38,10 @@ public class Cuenta {
     
     public void setSaldo(float saldoCta){
         saldo=saldoCta;
+    }
+
+    public void setNombre(String nombreCta){
+        nombre=nombreCta;
     }
     
     public void ingresarDinero(float importe){
@@ -44,6 +54,8 @@ public class Cuenta {
     
     public void mostrarCuenta(){
         System.out.println("Nº Cuenta: " + getNumero());
-        System.err.println("Saldo actual: "+ getSaldo()+" €");
+        System.out.println("Saldo actual: "+ getSaldo()+" €");
+        System.out.println("Titular: " + getNombre());
+        
     }
 }

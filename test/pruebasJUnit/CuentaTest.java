@@ -31,7 +31,7 @@ public class CuentaTest {
     public void testGetNumero() {
         System.out.println("getNumero");
        // Cuenta instance = null;
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         String expResult = "ES011234"; // Valor esperado del Número de cuenta
        // String result = instance.getNumero();
         String result = cuenta1.getNumero();
@@ -47,7 +47,7 @@ public class CuentaTest {
     public void testGetSaldo() {
         System.out.println("getSaldo");
        // Cuenta instance = null;
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         float expResult = 100.0F; // Colocamos el valor esperado del saldo
        // float result = instance.getSaldo();
         float result = cuenta1.getSaldo();
@@ -63,7 +63,7 @@ public class CuentaTest {
     public void testSetNumero() {
         System.out.println("setNumero");
         String numCta = "ES011234";
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         cuenta1.setNumero(numCta);
         assertEquals(numCta, cuenta1.getNumero());
         // TODO review the generated test code and remove the default call to fail.
@@ -77,7 +77,7 @@ public class CuentaTest {
     public void testSetSaldo() {
         System.out.println("setSaldo");
         float saldoCta = 100.0F;
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         cuenta1.setSaldo(saldoCta);
         assertEquals(saldoCta, cuenta1.getSaldo());
         // TODO review the generated test code and remove the default call to fail.
@@ -90,7 +90,7 @@ public class CuentaTest {
     @Test
     public void testIngresarDinero() {
         System.out.println("ingresarDinero");
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         float importe = 400.0F;
         cuenta1.ingresarDinero(importe);
         assertEquals(500.0F,cuenta1.getSaldo());
@@ -104,7 +104,7 @@ public class CuentaTest {
     @Test
     public void testRetirarDinero() {
         System.out.println("retirarDinero");
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         float importe = 20.0F;
         cuenta1.retirarDinero(importe);
         assertEquals(80.0F,cuenta1.getSaldo());
@@ -117,7 +117,7 @@ public class CuentaTest {
      */
     @Test
     public void testMostrarCuenta() {
-        Cuenta cuenta1 = new Cuenta("ES011234",100); 
+        Cuenta cuenta1 = new Cuenta("ES011234",100,"Jordi Pozo"); 
         System.out.println("mostrarCuenta");
         cuenta1.mostrarCuenta();
     }

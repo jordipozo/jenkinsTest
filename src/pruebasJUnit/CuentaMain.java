@@ -15,7 +15,7 @@ public class CuentaMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Cuenta cuenta1 = new Cuenta("ES011234", 100);
+        Cuenta cuenta1 = new Cuenta("ES011234", 100,"Jordi Pozo");
     }
     
 }
